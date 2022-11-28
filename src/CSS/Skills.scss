@@ -1,0 +1,63 @@
+@mixin responsive{
+    @media screen and (max-width: 720px) {
+      @content;
+    }
+  }
+
+.containerSkills {
+    background-color:rgb(3, 9, 23);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px solid rgba(21, 62, 157, 0.315);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.titleSkill {
+    color: #e4aa48;
+    text-align: left;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 40vh;
+    padding-top: 80px;
+    justify-content: space-around;
+    align-items: center;
+    .frontend, .backend, .stacks {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    .front, .back, .stack {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    @include responsive() {
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    @include responsive() {
+        width: 25%;
+        height: 50px;
+    }
+}
+
+.skill:hover {
+    -webkit-transform: scale(1.1);
+   transform: scale(1.2);
+   cursor: pointer;
+}

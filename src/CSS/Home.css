@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(3, 9, 23);
+  color: #dadada;
+}
+
+.home {
+  height: 90vh;
+  width: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #071128 0%, #030917 100%);
+  background-color: rgb(3, 9, 23);
+  color: #dadada;
+  font-family: "OpenSans", "sans serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.home h1 {
+  font-weight: 900;
+}
+@media screen and (max-width: 720px) {
+  .home {
+    height: 85vh;
+  }
+}
+
+.containerHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 720px) {
+  .containerHome {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.image {
+  width: 40%;
+}
+@media screen and (max-width: 720px) {
+  .image {
+    width: 80%;
+  }
+}
+
+.containerName {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: column;
+  gap: 20px;
+}
+.containerName .dot {
+  color: #e4aa48;
+}
+.containerName .name {
+  margin: 0;
+  font-size: 56px;
+}
+@media screen and (max-width: 720px) {
+  .containerName {
+    text-align: center;
+  }
+}
+
+.dashed {
+  width: 100px;
+  height: 2px;
+  background: #e4aa48;
+}/*# sourceMappingURL=Home.css.map */

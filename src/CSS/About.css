@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "OpenSans", "sans serif";
+}
+
+.mainAbout {
+  border-top: 1px solid rgba(21, 62, 157, 0.315);
+  border-bottom: 1px solid rgba(21, 62, 157, 0.315);
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width: 720px) {
+  .mainAbout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 20vw;
+  gap: 16px;
+}
+.containerText h2 {
+  font-size: 2rem;
+}
+.containerText h3 {
+  color: #e4aa48;
+}
+.containerText p {
+  color: #7C7D80;
+}
+@media screen and (max-width: 720px) {
+  .containerText {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.photos {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photos .carrossel {
+  cursor: -webkit-grab;
+  cursor: grab;
+  overflow: hidden;
+}
+.photos .inner {
+  display: flex;
+  gap: 20px;
+}
+.photos .inner .image img {
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=About.css.map *//*# sourceMappingURL=About.css.map */

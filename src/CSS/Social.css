@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.social a {
+  text-decoration: none;
+  color: #dadada;
+  display: flex;
+  justify-content: flex-start;
+}
+.social .dashHeader {
+  width: 0%;
+  height: 2px;
+  transform: scaleX(0%);
+  transition: all 3s ease;
+}
+.social p:hover .dashHeader {
+  width: 100%;
+  transform: scaleX(90%);
+  transition: transform 1s ease;
+  transform-origin: left;
+  background: #e4aa48;
+}
+
+.cv_download {
+  background-color: #e4aa48;
+  color: rgb(0, 0, 82);
+  padding: 10px;
+  text-decoration: none;
+}
+.cv_download a:hover {
+  background-color: #ffc258;
+  cursor: pointer;
+}/*# sourceMappingURL=Social.css.map */

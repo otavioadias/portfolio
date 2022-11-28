@@ -1,0 +1,60 @@
+.containerSkills {
+  background-color: rgb(3, 9, 23);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid rgba(21, 62, 157, 0.315);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.titleSkill {
+  color: #e4aa48;
+  text-align: left;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 40vh;
+  padding-top: 80px;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills .frontend, .skills .backend, .skills .stacks {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.skills .front, .skills .back, .skills .stack {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 300px;
+}
+@media screen and (max-width: 720px) {
+  .skills {
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 720px) {
+  .skill {
+    width: 25%;
+    height: 50px;
+  }
+}
+
+.skill:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}/*# sourceMappingURL=Skills.css.map */
